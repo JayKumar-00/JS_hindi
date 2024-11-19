@@ -44,7 +44,56 @@
 // "" => false
 // "hitesh" => true
 
+// let someNumber = 33
+// let stringNumber = String(someNumber)
+// console.log(stringNumber); //OUTPUT - 33
+// console.log(typeof stringNumber); //OUTPUT - string
+
+//---------------------------------------------------------------------
 let someNumber = 33
-let strinNumber = String(someNumber)
-console.log(strinNumber); //OUTPUT - 33
-console.log(typeof strinNumber); //OUTPUT - string
+let stringNumber = String(someNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// ******************** Operations *******************
+
+let value = 3
+let negValue = -value
+// console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2);
+// console.log(2/2);
+// console.log(2%2);
+
+let str1 = "hello"
+let str2 = " world"
+
+let str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+// console.log((3 + 4) * 5 % 3);
+
+// console.log(true); //Output => true
+// console.log(+true); //Output => 1
+// console.log(true+); // It is not possible, it will generate an error.
+
+// console.log(+""); //Output => 0
+
+let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
+
+let gameCounter = 100
+gameCounter++;
+console.log(gameCounter);
+
+// link to study
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
