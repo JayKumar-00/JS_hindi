@@ -38,6 +38,7 @@ const bigNumber = 53564136416341641365366165416n // DataType - (BigInt)
 const heros = ["shaktiman", "naagraj", "doga"]
 
 //Basic of definition of Object, it can also be declare within variable
+// we can access its element by myObj.name , myObj.age
 let myObj = {
     name: "hitech",
     age: 22,
@@ -59,3 +60,24 @@ const myFunction = function(){
 // console.log(typeof anotherId); //output - symbol
 
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (primitive) - Here it always gives copy not original value, Heap (Non-Primitive) - And it gives reference to the value means, changes made in one can reflect to other also
+
+let myYoutubeName = "JavaUser"
+let anotherName = myYoutubeName
+anotherName = "codeUser"
+console.log(myYoutubeName) //DIFFERENT OUTPUT => JavaUser
+console.log(anotherName) //DIFFERENT OUTPUT => codeUser
+
+let userOne = {
+    email: "user@gmiail.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+
+userTwo.email = "Java@gmail.com"
+
+console.log(userOne.email) // SAME OUPUT => Java@gmail.com
+console.log(userTwo.email) //SAME OUTPUT => Java@gmail.com
