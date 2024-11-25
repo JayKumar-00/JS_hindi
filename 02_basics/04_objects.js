@@ -56,3 +56,9 @@ console.log(Object.values(tinderUser)); //It convert object's values into array 
 console.log(Object.entries(tinderUser)); //It convert object's key-values pairs into array OUTPUT - [ [ 'id', '123abc' ], [ 'name', 'User_Js' ], [ 'isLoggedIn', false ] ]
 
 console.log(tinderUser.hasOwnProperty('isLogged'));
+
+const course = {
+    coursename: "js in hindi",
+    price: 99,
+    courseInstructor: "hitesh",
+}
