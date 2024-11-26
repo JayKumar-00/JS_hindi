@@ -29,7 +29,7 @@ const obj2 = {3: "a", 4: "b"}
 // const obj3 = Object.assign(obj1 ,obj2) //It can also be declare in this way, but better way is to use {} before Object.assign({}, obj1 ,obj2), because if don't do it then practically it all copy in obj1 [NOTE : Both will give the same output]
 // const obj3 = Object.assign({}, obj1 ,obj2) //This way is also less useable, because we will use spread Operator (...xyz, ...abc)
 const obj3 = {...obj1, ...obj2}
-console.log(obj3)
+// console.log(obj3)
 
 //This is called array of objects
 const users = [ //This is array
@@ -48,17 +48,40 @@ const users = [ //This is array
     }
 ]
 
-console.log(users[1].email)
-console.log(tinderUser);
+// console.log(users[1].email)
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); //It convert object's key into array OUTPUT - [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser)); //It convert object's values into array OUTPUT - [ '123abc', 'User_Js', false ]
-console.log(Object.entries(tinderUser)); //It convert object's key-values pairs into array OUTPUT - [ [ 'id', '123abc' ], [ 'name', 'User_Js' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.keys(tinderUser)); //It convert object's key into array OUTPUT - [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser)); //It convert object's values into array OUTPUT - [ '123abc', 'User_Js', false ]
+// console.log(Object.entries(tinderUser)); //It convert object's key-values pairs into array OUTPUT - [ [ 'id', '123abc' ], [ 'name', 'User_Js' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
 
 const course = {
     coursename: "js in hindi",
     price: 99,
     courseInstructor: "hitesh",
 }
+
+// course.courseInstructor
+// const {courseInstructor} = course // Now we don't have to write all the thing {course.courseInstructor} OR we can simply assign any name to courseInstructor to any other varaible as we want
+// console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+//JSON - in this keys are also usually are string and its value is also string
+
+//Yes!! objects are JSON only difference is their is no name for objects
+// {
+//     "name": "User",
+//     "coursename": "js in hindi",
+//     "price": "free",
+// }
+//Another way to declare JSON
+[
+    {},
+    {},
+    {},
+]
+//https://api.github.com/users/hiteshchoudhary
