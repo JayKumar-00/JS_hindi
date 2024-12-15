@@ -37,7 +37,7 @@ buttons.forEach(function (button) {
 
 ```
 
-## project 2 solution
+## project 2 solution code
 ```javascript
 const form = document.querySelector('form');
 // const height = parseInt(document.querySelector('#height').value) //This is not useable, becaue if we declare it here then by default it will give empty value.Which is not require right now.
@@ -60,5 +60,19 @@ form.addEventListener('submit', function (e) {
   }
 });
 
+
+```
+
+## project 3 solution code
+
+```javascript
+const clock = document.getElementById('clock');
+// const clock = document.querySelector('#clock')
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 
 ```
