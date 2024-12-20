@@ -1,5 +1,8 @@
 # Projects realted to DOM 
 
+## project link by me
+[CLick here](https://stackblitz.com/edit/stackblitz-starters-l1ycsgpu?description=HTML/CSS/JS%20Starter&file=index.html&terminalHeight=10&title=Static%20Starter)
+
 ## project link
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
